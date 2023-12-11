@@ -35,6 +35,7 @@ avyuh *R_o = rotList(M_PI/2);
 		avyuh *G_dir=VertToList(M1,M2,M3);
 		avyuh *G_n=Listmul(R_o,G_dir);
 		avyuh *G_con= Listdiag(Listmul(transposeList(G_n),G_v));
+		avyuh *G_con1=circulantList(G_v);
 		avyuh *G_dis= Listsqrtdiag(Listmul(transposeList(G_dir),G_dir));
 		avyuh *G_line=Liststack(G_n,G_con);
 //************************************MEDIANS***************************************
@@ -54,7 +55,8 @@ avyuh *R_o = rotList(M_PI/2);
 	 	avyuh *linemat_perp_bis=Liststack(G_n_alt,cmat_perp_bis);
 	 	avyuh *G_O=line_intersect(linemat_perp_bis);
 //*****************************ANGULAR BISECTOR*************************************
-		avyuh *secvec=Listmul(G_dis,C_in);
+		avyuh *secvec=Listmul(G_dis,C_in); //m, n , p values
+		
 		avyuh *i_con = sample_assign(secvec,G_dis);
 
 		avyuh *a_dir=Listmul(G_v,i_con);
@@ -248,14 +250,14 @@ printList(f);
 /*printf("gh = \n");
 printList(gh);
 printf("sigmat = \n");
-printList(sigmat);
+printList(sigmat);*/
 printf("eigen values = \n");
 printList(E_val);
 printf("eigen vectors = \n");
 printList(P);
 
 
-printf("u1 = \n");
+/*printf("u1 = \n");
 printList(u1);
 printf("u2 = \n");
 printList(u2);
