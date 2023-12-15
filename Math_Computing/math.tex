@@ -54,50 +54,8 @@
 \textbf{Construction steps:}
 \\
 		\begin{enumerate}[label=(\roman*)]
-			\item Let point $\vec{A}$ be the reference point whose coordinates are at origin. 
-\begin{align}
-\vec{A} &= \myvec{0 \\ 0}
-\end{align}
 
-\item Let the distance between point $\vec{A}$ and $\vec{B}$ be $x$, and also considering the point $\vec{B}$ on same axis .
-\begin{align}
-	\norm{A-B} &= x
-\end{align}
-				So,the coordinates of point $\vec{B}$ be,
-\begin{align}
-\vec{B} &= \myvec{x \\ 0}
-\end{align}
-
-\item Given the point $\vec{P}$ is the mid-point of line segment $\vec{AB}$,
-\begin{align}
-	\vec{P} &= \myvec{\frac{A+B}{2}}\\
-	\vec{P} &= \myvec{a \\ b}
-\end{align}
-
-\item Let the coordinate points of $\vec{D}$ and $\vec{E}$ are,
-\begin{align}
-\vec{D} &= \myvec{ x_1 \\ x_2},\\
-\vec{E} &= \myvec{ x_3 \\ x_4}
-\end{align}
-
-\item Let assume the distance between points $\vec{(A, D)}$ and $\vec{(B, E)}$ be $r$ ,the line $\vec{AB}$ makes an angle $ \theta_1 $ anticlock-wise from point $\vec{A}$ and makes the same angle in clock-wise from point $\vec{B}$ with the lines $\vec{(AD, BE)}$.
-\begin{align}
-	\norm{A-D} &= r = \norm{B-E} \\
-	\angle BAD &= \theta = \angle ABE
-\end{align}
-
-				$\therefore$ Now the coordinates of point $\vec{D, E}$ are,
-\begin{align}
-	\vec{D} &= \myvec{ x_1 \\ x_2 } = \myvec{r \cos \theta \\ r\sin \theta} \\
-	\vec{E} &= \myvec{ x_3 \\ x_4 } = \myvec{-r \cos \theta \\ r \sin \theta} 
-\end{align}
-
-\item Similarly, the mid-point $\vec{P}$ also makes an angle $\theta_2$ with the points $\vec{D}$ and $\vec{E}$
-	\begin{align}
-		\angle BAD &= \theta = \angle ABE
-	\end{align}
-
-\item Let assume, 
+\item Let assume, the input parameters are, 
 \begin{table}[H]
 \centering
 	\input{tables/table_1.tex}
@@ -105,6 +63,7 @@
 	  \label{Table-1: }
 \end{table}
 
+$\therefore$ the output can be calculated as,
 \begin{table}[H]
 \centering
 	\input{tables/table_2.tex}
@@ -112,7 +71,7 @@
 	  \label{Table-2: }
 \end{table}
 
-Joining these points forms the required figure
+$\therefore$ By, joining these points forms the required figure
 
 \end{enumerate}
 \end{enumerate}
