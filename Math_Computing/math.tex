@@ -80,9 +80,9 @@
 \vec{E} &= \myvec{ x_3 \\ x_4}
 \end{align}
 
-\item Let assume the distance between point $\vec{A, D}$ and $\vec{B, E}$ be $\vec{r}$ ,and the line $\vec{AB}$ makes an angle $ \theta $ anticlock-wise from point $\vec{A}$ clock-wise from point $\vec{B}$ with the line $\vec{AD}$, $\vec{BE}$.
+\item Let assume the distance between points $\vec{(A, D)}$ and $\vec{(B, E)}$ be $r$ ,the line $\vec{AB}$ makes an angle $ \theta_1 $ anticlock-wise from point $\vec{A}$ and makes the same angle in clock-wise from point $\vec{B}$ with the lines $\vec{(AD, BE)}$.
 \begin{align}
-	\norm{A-D} &= \vec{r} = \norm{B-E} \\
+	\norm{A-D} &= r = \norm{B-E} \\
 	\angle BAD &= \theta = \angle ABE
 \end{align}
 
@@ -92,7 +92,7 @@
 	\vec{E} &= \myvec{ x_3 \\ x_4 } = \myvec{-r \cos \theta \\ r \sin \theta} 
 \end{align}
 
-\item Similarly, the mid-point $\vec{P}$ also makes an angle $\theta$ with the points $\vec{D}$ and $\vec{E}$
+\item Similarly, the mid-point $\vec{P}$ also makes an angle $\theta_2$ with the points $\vec{D}$ and $\vec{E}$
 	\begin{align}
 		\angle BAD &= \theta = \angle ABE
 	\end{align}
@@ -100,22 +100,17 @@
 \item Let assume, 
 \begin{table}[H]
 \centering
-	\input{tables/table.tex}
-	  \caption{Parameters}
-	  \label{Table}
+	\input{tables/table_1.tex}
+	  \caption{Input Parameters}
+	  \label{Table-1: }
 \end{table}
 
-\item on calculating we get,
-\begin{align}
-\vec{r} &= 5,\\
-\vec{A} &= \myvec{0 \\ 0},\\
-\vec{B} &= \myvec{5 \\ 0} ,\\
-\vec{P} &= \myvec{2.5 \\ 0} ,\\
-\vec{D} &= \myvec{ 4.330127 \\ 2.5 } ,\\
-\vec{E} &= \myvec{-4.330127  \\ 2.5 },\\
-\vec{D} &= \myvec{ 2.5 \\ 4.330127 } ,\\
-\vec{E} &= \myvec{ -2.5 \\ 4.330127 }
-\end{align}
+\begin{table}[H]
+\centering
+	\input{tables/table_2.tex}
+	  \caption{Output Parameters}
+	  \label{Table-2: }
+\end{table}
 
 Joining these points forms the required figure
 
@@ -123,7 +118,7 @@ Joining these points forms the required figure
 \end{enumerate}
 
 \begin{figure}[H]
-    \includegraphics[width=\columnwidth]{figs/fig_mat_comp.png}
+    \includegraphics[width=\columnwidth]{figs/fig_math_comp}
 	\caption{$\triangle \vec{DAP} \hspace{12pt} and \hspace{12pt} \triangle \vec{EBP}$}
     \label{fig:fig2}
 \end{figure}
