@@ -40,101 +40,83 @@
 
 \textbf{This question is from class 9 ncert chapter 7.triangles}
 \begin{enumerate}
-	\item $AB$ is a line segment and $P$ is its mid-point. $D$ and $E$ are points on the same side of $AB$ such that $\angle BAD = \angle ABE$ and $\angle EPA = \angle DPB$. Show that
+	\item $\vec{AB}$ is a line segment and $\vec{P}$ is its mid-point. $\vec{D}$ and $\vec{E}$ are points on the same side of $\vec{AB}$ such that $\angle BAD = \angle ABE$ and $\angle EPA = \angle DPB$. Show that
 		\begin{enumerate}
-	\item $\triangle DAP \cong  \triangle EBP$
-	\item $AD = BE$
+			\item $\triangle \vec{DAP} \cong  \triangle \vec{EBP}$
+			\item $\vec{AD} = \vec{BE}$
 \end{enumerate}
 \begin{figure}[H]
     \includegraphics[width=\columnwidth]{figs/mc.png}
-    \caption{$\triangle  DAP \hspace{12pt} and \hspace{12pt} \triangle EBP$}
+	\caption{$\triangle  \vec{DAP} \hspace{12pt} and \hspace{12pt} \triangle \vec{EBP}$}
  \label{fig:fig1}
 \end{figure}
 \pagebreak
 \textbf{Construction steps:}
 \\
 		\begin{enumerate}[label=(\roman*)]
-\item Let point $A$ be the reference point whose coordinates are at origin. 
+			\item Let point $\vec{A}$ be the reference point whose coordinates are at origin. 
 \begin{align}
 \vec{A} &= \myvec{0 \\ 0}
 \end{align}
 
-\item Let the distance between point $A$ and $B$ be $x$, and also considering the point $B$ on same axis .
+\item Let the distance between point $\vec{A}$ and $\vec{B}$ be $x$, and also considering the point $\vec{B}$ on same axis .
 \begin{align}
 	\norm{A-B} &= x
 \end{align}
- So,the coordinates of point $B$ be,
+				So,the coordinates of point $\vec{B}$ be,
 \begin{align}
 \vec{B} &= \myvec{x \\ 0}
 \end{align}
 
-\item Given the point $P$ is the mid-point of line segment $AB$,
+\item Given the point $\vec{P}$ is the mid-point of line segment $\vec{AB}$,
 \begin{align}
 	\vec{P} &= \myvec{\frac{A+B}{2}}\\
 	\vec{P} &= \myvec{a \\ b}
 \end{align}
 
-\item Let the coordinate points of $D$ and $E$ are,
+\item Let the coordinate points of $\vec{D}$ and $\vec{E}$ are,
 \begin{align}
 \vec{D} &= \myvec{ x_1 \\ x_2},\\
 \vec{E} &= \myvec{ x_3 \\ x_4}
 \end{align}
 
-\item Let assume the distance between point $A, D$ and $B, E$ be $r$ ,and the line $AB$ makes an angle $ \theta $ anticlock-wise from point $A$ clock-wise from point $B$ with the line $AD$ $BE$.
+\item Let assume the distance between point $\vec{A, D}$ and $\vec{B, E}$ be $\vec{r}$ ,and the line $\vec{AB}$ makes an angle $ \theta $ anticlock-wise from point $\vec{A}$ clock-wise from point $\vec{B}$ with the line $\vec{AD}$, $\vec{BE}$.
 \begin{align}
 	\norm{A-D} &= \vec{r} = \norm{B-E} \\
 	\angle BAD &= \theta = \angle ABE
 \end{align}
 
-$\therefore$ Now the coordinates of point $D, E$ are,
+				$\therefore$ Now the coordinates of point $\vec{D, E}$ are,
 \begin{align}
 	\vec{D} &= \myvec{ x_1 \\ x_2 } = \myvec{r \cos \theta \\ r\sin \theta} \\
 	\vec{E} &= \myvec{ x_3 \\ x_4 } = \myvec{-r \cos \theta \\ r \sin \theta} 
 \end{align}
 
-\item Similarly, the mid-point $P$ also makes an angle $\theta$ with the points $D$ and $E$
+\item Similarly, the mid-point $\vec{P}$ also makes an angle $\theta$ with the points $\vec{D}$ and $\vec{E}$
 	\begin{align}
 		\angle BAD &= \theta = \angle ABE
 	\end{align}
 
-\item Now the coordinates of $A,B,P,D$ and $E$ are ,
-\begin{align}
-\vec{A} &= \myvec{0 \\ 0},\\
-\vec{B} &= \myvec{x \\ 0} ,\\
-\vec{P} &= \myvec{a \\ b} ,\\
-\vec{D} &= \myvec{r \cos \theta \\ r \sin \theta} \\
-\vec{E} &= \myvec{-r \cos \theta \\ r \sin \theta} 
-\end{align}
-
 \item Let assume, 
-\begin{align}
-	x &= 5 \\
-	r &=4 \\
-	\theta_1 &= 30\degree(\text{for the angle BAD and ABE})\\
-	\theta_2 &= 60\degree(\text{for the angle EPA and DPB})
-\end{align}
+\begin{table}[H]
+\centering
+	\input{tables/table.tex}
+	  \caption{Parameters}
+	  \label{Table}
+\end{table}
 
-\item on substituting the values,
+\item on calculating we get,
 \begin{align}
+\vec{r} &= 5,\\
 \vec{A} &= \myvec{0 \\ 0},\\
 \vec{B} &= \myvec{5 \\ 0} ,\\
 \vec{P} &= \myvec{2.5 \\ 0} ,\\
-\vec{D} &= \myvec{4 \cos 30 \degree \\ 4 \sin 30 \degree },\\
-\vec{E} &= \myvec{-4 \cos 30 \degree \\ 4 \sin 30 \degree },\\
-\vec{D} &= \myvec{4 \cos 60 \degree \\ 4 \sin 60 \degree } ,\\
-\vec{D} &= \myvec{-4 \cos 60 \degree \\ 4 \sin 60 \degree } 
+\vec{D} &= \myvec{ 4.330127 \\ 2.5 } ,\\
+\vec{E} &= \myvec{-4.330127  \\ 2.5 },\\
+\vec{D} &= \myvec{ 2.5 \\ 4.330127 } ,\\
+\vec{E} &= \myvec{ -2.5 \\ 4.330127 }
 \end{align}
 
-\item on calculating we get  ,
-\begin{align}
-\vec{A} &= \myvec{0 \\ 0},\\
-\vec{B} &= \myvec{5 \\ 0} ,\\
-\vec{P} &= \myvec{2.5 \\ 0} ,\\
-\vec{D} &= \myvec{ 3.464101 \\ 2 } ,\\
-\vec{E} &= \myvec{-3.464101  \\ 2 },\\
-\vec{D} &= \myvec{ -2 \\ 3.464101 } ,\\
-\vec{E} &= \myvec{ -2 \\ 3.464101 }
-\end{align}
 Joining these points forms the required figure
 
 \end{enumerate}
@@ -142,7 +124,7 @@ Joining these points forms the required figure
 
 \begin{figure}[H]
     \includegraphics[width=\columnwidth]{figs/fig_mat_comp.png}
-    \caption{$\triangle DAP \hspace{12pt} and \hspace{12pt} \triangle EBP$}
+	\caption{$\triangle \vec{DAP} \hspace{12pt} and \hspace{12pt} \triangle \vec{EBP}$}
     \label{fig:fig2}
 \end{figure}
 
