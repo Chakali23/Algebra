@@ -20,8 +20,8 @@ import shlex
 
 A = np.array([0,0]).reshape(-1,1)
 B = np.array([5,0]).reshape(-1,1) 
-P = (A+B)/2         # Mid-point of AB
-r=4                 #length of AD and BE
+P = (A+B)/2             # Mid-point of AB
+r = LA.norm(A-B)         #length of AD and BE
 theta1=m.pi/6           # angle BAD and angle ABE30 degrees
 theta2=m.pi/3          #angle EPA and and angle DPB 60 degrees
 D = A + np.array([r*m.cos(theta1),r*m.sin(theta1)]).reshape(-1,1)
@@ -29,8 +29,8 @@ E = B + np.array([-r*m.cos(theta1),r*m.sin(theta1)]).reshape(-1,1)
 D = P + np.array([r*m.cos(theta2),r*m.sin(theta2)]).reshape(-1,1)
 E = P + np.array([-r*m.cos(theta2),r*m.sin(theta2)]).reshape(-1,1)
 print(P,"\n",D,"\n",E,"\n")
+print(r,"\n")
 
-a = LA.norm(A-B)    #length of AB
 x1 = LA.norm(A-D)    #length of AD
 x2 = LA.norm(B-E)    #length of BE
 print(x1,"\n",x2,"\n")
@@ -79,4 +79,3 @@ plt.savefig('/sdcard/Documents/figs/fig_mat_comp.png')
 #subprocess.run(shlex.split("termux-open ./figs/tri_sss.pdf"))
 #else
 plt.show()
-
